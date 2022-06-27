@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li a{
+    text-decoration: none;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin: auto;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; 
+    flex-wrap: wrap;
+}  
+header{
+    background-color: rgb(86, 7, 182);
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.lista{
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.lista li a{
+    color: white;
+   
+}
+
+.apresentacao{
+    display: flex;
+    margin: 60px auto;
+    justify-content:space-around;
+    max-width: 70%;
+    align-items: center;
+    color:rgb(86, 7, 182) ;
+}
+
+img{
+    max-width: 60%;
+}
+.hav{
+    width: 40%;
+}
+
+.apresentacao h1{
+    font-size: 3.5rem;
+    color:rgb(86, 7, 182);
+    margin-bottom: 0.7rem;
+}
+.apresentacao a{
+    background-color:rgb(86, 7, 182);
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    padding: 1rem;
+   max-width: 150px;
+    border-radius: 2rem;
+    display: block;
+    margin-top: 5rem;
+    text-align: center;
+}
+.subtitulo{
+    font-size: 3rem;
+    margin-bottom: 7px;
+}
+.paragrafo{
+   font-size: 1rem;
+   margin-top: 1rem;
+   text-align: justify;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   max-width: 85%;
+}
+.container-externo{
+    height:25rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color:rgb(86, 7, 182);
+   
+}
+
+.lista-servicos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem;
+}
+.container-externo h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 25px;
+    margin-top: 10px;
+    color: rgb(255, 252, 252);
+    margin-left: 10px;
+}
+.lista-servicos div{
+    margin-top: 20px;
+}
+.lista-servicos p{
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    color: rgb(255, 252, 252);
+}
+.servico{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista-servicos a{
+    color: rgb(86, 7, 182);
+    margin-top: 20px;
+    background-color: rgb(255, 252, 252);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.planos{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 0 5rem;
+    height: auto;
+    margin-top: 5rem;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+   
+}
+.item-plano1,.item-plano2,.item-plano3{
+    border: 3px solid rgb(86, 7, 182);
+    max-width: 20rem;
+    height: 15rem;
+    text-align: center;
+    margin: 0 0.5rem;
+    
+}
+.item-plano li{
+    margin-top:10px;
+    text-align: justify;
+    margin-left: 50px;
+    list-style: square;
+    color:rgb(86, 7, 182) ;
+}
+.item-plano{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item-plano h3{
+    margin-top: 30px;
+
+}
+.linha{
+    width: 15rem;
+    background-color: rgb(86, 7, 182);
+    height: 0.4rem;
+    margin-top:0.9rem;
+    margin-left: 2.5rem;
+    align-self: center;
+   
+}
+.item-plano2{
+    height: 20rem;
+}
+.item-plano3{
+    height: 25rem;
+}
+.item-plano a{
+    background-color: rgb(86, 7, 182);
+    color: rgb(245, 246, 246);
+    width: 10rem;
+   align-self: center;
+   border-radius: 15px;
+   text-decoration: none;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.rodape{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color:rgb(86, 7, 182) ;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+@media (max-width:990px) {
+    .flex-container{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .apresentacao{
+       flex-direction: column-reverse;
+      
+        
+    }
+    .apresentacao h1{
+        font-size: 2.5rem;
+       
+    }
+    .apresentacao a{
+        font-size: 13px;
+        padding: 0.5rem;
+
+    }
+    img{
+        max-width: 100%;
+    }
+    .hav{
+        width: 100%;
+        margin: 0 5px;
+    }
+    .paragrafo{
+        font-size:0.9rem ;
+        width: 100%;
+    }
+    .container-externo{
+        height: auto;
+        padding: 5px;
+    }
+    .lista-servicos{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 2rem;
+    }
+    .servico img{
+        width: 100px;
+        height: 100px;
+    }
+    .planos{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+}
